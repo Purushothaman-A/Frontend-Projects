@@ -6,10 +6,10 @@ icon.addEventListener('click',()=>{
     document.body.classList.toggle('dark-theme')
 
     if(document.body.classList.contains('dark-theme')){
-        icon.src = "/assets/moon.png"
+        icon.src = "assets/moon.png"
     }
     else{
-        icon.src="/assets/sun.png"
+        icon.src="assets/sun.png"
     }
 
 })
