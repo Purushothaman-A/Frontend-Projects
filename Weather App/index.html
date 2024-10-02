@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body class="bg-gray-400 text-white">
+
+   <!-- Weather app container -->
+   <div class="w-max ml-auto mr-auto mt-16 h-full p-9 bg-gray-950 rounded-3xl">
+      <h1 class="text-center font-semibold text-4xl">Weather App</h1>
+      
+      <!-- Input for city name -->
+      <div class="flex mt-9 m-11">
+         <input id="input" class="outline-0 text-black text-lg font-medium w-64 h-12 pl-5 pr-4 rounded-3xl" type="text" placeholder="Enter City Name">
+         <button id="btn" class="hover:bg-yellow-600 bg-yellow-300 p-2 ml-5 rounded-full">
+            <img class="w-5 h-5 m-2" src="search.png" alt="Search">
+         </button>
+      </div>
+
+      <!-- Error message -->
+      <h1 id="error" class="hidden ml-10 mt-2 text-2xl">Invalid City Name</h1>
+      
+      <!-- Weather details -->
+      <div id="weather" class="hidden">
+         <div class="text-center text-6xl font-semibold">
+            <img id="weatherIcon" class="mr-auto ml-auto" src="clouds.png" alt="Weather Icon">
+            <p id="temp">34°C</p>
+            <p id="cityName">Tamil Nadu</p>
+         </div>
+
+         <div class="flex justify-between mt-16 text-lg">
+            <!-- Humidity -->
+            <div class="mt-1">
+               <img class="w-9 mb-2" src="humidity.png" alt="Humidity Icon">
+               <p id="humidity">62%</p>
+               <p>Humidity</p>
+            </div>
+            
+            <!-- Wind speed -->
+            <div>
+               <img class="w-9 mb-2" src="Wind.png" alt="Wind Icon">
+               <p id="wind">4.63 km/h</p>
+               <p>Wind Speed</p>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <!-- Tailwind and script inclusion -->
+   <script src="https://cdn.tailwindcss.com"></script>
+   <script src="script.js"></script>
+</body>
+</html>
